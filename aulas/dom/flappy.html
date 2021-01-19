@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Flappy Bird</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/flappy.css">
 </head>
-
 <body class="conteudo">
     <h1>Flappy Bird</h1>
-    <div wm-flappy></div>
+    <div wm-flappy>
+        <div class="score">50</div>
+        <img
+            src="./imgs/passaro.png"
+            alt="bird-player"
+            class="bird"
+        />
+        <div class="barriers">
+            <div class="barrier">
+                <div class="barrier-body"></div>
+                <div class="barrier-border"></div>
+            </div>
+            <div class="barrier">
+                <div class="barrier-border"></div>
+                <div class="barrier-body"></div>
+            </div>
+        </div>
+    </div>
     <script src="js/flappy.js"></script>
 </body>
-
 </html>
